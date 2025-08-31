@@ -5,7 +5,7 @@ FROM tomcat:9.0-alpine
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
 # Copy your WAR file to Tomcat's webapps directory as ROOT.war for root context deployment
-COPY target/java-scm.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/java-anvesh.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose default Tomcat HTTP port
 EXPOSE 8080
